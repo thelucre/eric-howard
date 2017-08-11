@@ -11,6 +11,8 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
-    }
+    },
+    // 404 Catch all 
+    { path: '*', redirect: '/' }
   ]
 })
