@@ -1,18 +1,19 @@
 <template lang="jade">
 .page.home-page
   home-marquee
+  intro
 
 </template>
 
 <script>
 import HomeMarquee from '@/components/HomeMarquee'
-
-console.log(HomeMarquee);
+import Intro from '@/components/Intro'
 
 export default {
   name: 'hello',
   components: {
-    'home-marquee': HomeMarquee
+    'home-marquee': HomeMarquee,
+    'intro': Intro,
   }
 }
 </script>

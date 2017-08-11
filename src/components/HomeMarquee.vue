@@ -20,8 +20,6 @@ export default {
 <style lang="stylus" scoped>
 .home-marquee
   height 100vh
-  background-color: #FAACA8;
-  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
 
 
 .content
@@ -59,4 +57,6 @@ h2
   font-family 'Arial', sans-serif
   letter-spacing 0.3vw
   font-size 1rem
+  border-radius 2px
+  box-shadow 0 0 20px rgba(black, 0.05)
 </style>
