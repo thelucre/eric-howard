@@ -1,11 +1,11 @@
 <template lang="jade">
 .block.intro
   h2
-    | I&nbsp;
-    a(href="http://bukwild.com") build websites
-    | , craft
+    | I build&nbsp;
+    a(href="http://bukwild.com") websites
+    | , craft&nbsp;
     a(href="http://thelucre.com") indie games
-    | , and design
+    | , and design&nbsp;
     a(href="http://hsquest.com") installation artwork
     | .
 
@@ -20,12 +20,13 @@ export default {
 <style lang="stylus" scoped>
 .intro
   padding 0 0 16rem 0
+  text-align center
 
 h2
   color white
-  font-size 4rem
+  font-size 3.5rem
   font-style italic
-  max-width 650px
+  max-width 850px
   margin 0 auto
   font-weight normal
 

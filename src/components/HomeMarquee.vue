@@ -3,10 +3,7 @@
   .content
     h1
       span.space ERIC
-      br
-      span HOW
-      br
-      span.space-2 ARD
+
     h2 Technophile + Thinker + Maker
 
 </template>
@@ -31,8 +28,8 @@ export default {
   width 95%
 
 h1
-  font-family: 'Monoton', cursive;
-  font-size 11rem
+  font-family 'Monoton', cursive
+  font-size 11.4rem
   font-weight normal
   line-height 0.95
   text-align center
@@ -52,7 +49,7 @@ h2
   color white
   display inline-block
   padding 0.8rem 1.5rem
-  font-weight normal
+  font-weight 600
   text-transform uppercase
   font-family 'Arial', sans-serif
   letter-spacing 0.3vw
