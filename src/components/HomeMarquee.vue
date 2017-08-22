@@ -6,11 +6,18 @@
 
     h2 Technophile + Thinker + Maker
 
+    social-links
 </template>
 
 <script>
+import SocialLinks from './SocialLinks'
+
 export default {
-  name: 'home-marquee'
+  name: 'home-marquee',
+
+  components: {
+    'social-links': SocialLinks,
+  },
 }
 </script>
 
