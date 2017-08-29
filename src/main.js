@@ -8,6 +8,9 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import VueVisual from 'vue-visual'
+Vue.component('visual', VueVisual);
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
@@ -16,4 +19,16 @@ new Vue({
   components: { App }
 })
 
-console.log('scripts running');
+
+// A lil bit of customization
+console.log('%c '+
+'  ▄  █ ▄███▄   █     █     ████▄   ▄ \n' +
+' █   █ █▀   ▀  █     █     █   █   █  \n' +
+' ██▀▀█ ██▄▄    █     █     █   █  █   \n' +
+' █   █ █▄   ▄▀ ███▄  ███▄  ▀████  █   \n' +
+'    █  ▀███▀       ▀     ▀            \n' +
+'   ▀                              ▀   ',
+  'background: #222; color: #bada55; font-size: 11px; line-height: 0.5;');
+
+console.log( '%c\n\nAnd welcome to the console',
+  'background: #222; color: #bada55; font-size: 20px; text-transform: uppercase;');

@@ -2975,6 +2975,10 @@ is-number@^3.0.0:
   dependencies:
     kind-of "^3.0.2"
 
+is-numeric@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/is-numeric/-/is-numeric-0.0.5.tgz#5f26778b3385005334344b1b5985ee7ea63316e6"
+
 is-obj@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
@@ -3565,13 +3569,13 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
+"lodash@3 - 4", lodash@^4.0.1, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.5.0:
+  version "4.17.4"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+
 lodash@^3.8.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
-
-lodash@^4.0.1, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.5.0:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 log-symbols@^1.0.2:
   version "1.0.2"
@@ -5088,6 +5092,10 @@ schema-utils@^0.3.0:
   dependencies:
     ajv "^5.0.0"
 
+scrollmonitor@^1.1.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/scrollmonitor/-/scrollmonitor-1.2.3.tgz#87bf912ca28da64796f529e8129fa4a9b106fb74"
+
 selenium-server@^3.0.1:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/selenium-server/-/selenium-server-3.4.0.tgz#f9303656d956c8d6c856e4942167e0dec97fa7a8"
@@ -5867,6 +5875,12 @@ vue-hot-reload-api@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.1.0.tgz#9ca58a6e0df9078554ce1708688b6578754d86de"
 
+vue-in-viewport-mixin@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-in-viewport-mixin/-/vue-in-viewport-mixin-1.0.3.tgz#15aebfa4f2f616c12083d9bb2a91853d29b170a6"
+  dependencies:
+    scrollmonitor "^1.1.3"
+
 vue-loader@^12.1.0:
   version "12.2.2"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-12.2.2.tgz#2b3a764f27018f975bc78cb8b1f55137548ee2d7"
@@ -5906,6 +5920,14 @@ vue-template-compiler@^2.3.3:
 vue-template-es2015-compiler@^1.2.2:
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.5.3.tgz#22787de4e37ebd9339b74223bc467d1adee30545"
+
+vue-visual@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/vue-visual/-/vue-visual-0.2.0.tgz#9d329667e73f53f7cd8cc92578877f9e0fd24d98"
+  dependencies:
+    is-numeric "^0.0.5"
+    lodash "3 - 4"
+    scrollmonitor "^1.1.3"
 
 vue@^2.3.3:
   version "2.4.2"

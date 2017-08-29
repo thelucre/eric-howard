@@ -1,7 +1,7 @@
 <template lang="jade">
 .home-marquee
   .content
-    h1
+    h1.heading
       span.space ERIC
 
     h2 Technophile + Thinker + Maker
@@ -35,7 +35,6 @@ export default {
   width 95%
 
 h1
-  font-family 'Monoton', cursive
   font-size 11.4rem
   font-weight normal
   line-height 0.95

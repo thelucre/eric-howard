@@ -10,12 +10,30 @@
 :root
   mq-values(font-size, 100%, 80%, 1200px)
 
-
 body
   background-color #FAACA8
-  background-image linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%)
+  background-image linear-gradient(19deg, pink 0%, purple 90%)
   background-attachment fixed
+
+  *
+    color white
 
 *, *:before, *:after
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
+
+
+.heading
+  font-family 'Monoton', cursive
+  text-transform uppercase
+  font-weight normal
+
+.block
+  max-width 1200px
+  margin-left auto
+  margin-right @margin-left
+  padding 8rem 20px
+
+p
+  font-size 30px
+  line-height 1.5

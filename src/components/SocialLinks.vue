@@ -1,5 +1,5 @@
 <template lang="jade">
-.block.social-links
+.social-links
   a.icon-linkedin(href='https://www.linkedin.com/in/ericmhoward/' target='_blank')
   a.icon-twitter(href='https://twitter.com/theLucre' target='_blank')
   a.icon-github(href='https://github.com/thelucre' target='_blank')
@@ -23,12 +23,12 @@ export default {
     font-size 2rem
     display inline-block
     margin 0 1rem
+    opacity 0.8
     transition transform 0.2s ease, opacity 0.2s ease, text-shadow .4s ease
-
 
     &:hover,
     &:active
-      opacity 0.8
+      opacity 1
       transform scale(1.25) rotate(-6deg)
       text-shadow 0 0 1rem rgba(black, 0.1)
 </style>
