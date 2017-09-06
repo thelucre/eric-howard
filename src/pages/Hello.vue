@@ -3,25 +3,49 @@
   home-marquee
   intro
 
-  category-intro(title="Web")
-    p Been making websites for at least 10 years, primarily on the frontend. Currently fascinated with Vue.js and Laravel, but plenty of XP with Shopify, Wordpress, and dabbling with React, D3, and Three.js.
+  //----------------------------------------
+    WEB
+  //----------------------------------------
+  category-intro(:title="web.headline" anchor="web-development")
+    .content(v-html="web.intro")
+    logo-garden(:logos="clientLogos")
 
-    br
-    br
+  portfolio-item(v-for="client in web.clients"
+    v-if="client.project"
+    v-bind:key="client.project.title"
+    v-bind:images="client.project.images"
+    v-bind:title="client.project.title"
+    v-bind:copy="client.project.copy"
+    v-bind:link="client.project.link"
+    v-bind:logo="client.logo")
 
-    p Clients I've built sites for:
-    br
-    br
-    logo-garden(:logos='clients')
+  //----------------------------------------
+    GAME
+  //----------------------------------------
+  category-intro(:title="game.headline"
+    anchor="indie-games")
+    .content(v-html="game.intro")
 
-  portfolio-item(:image='stikwood')
+  portfolio-item(v-for="g in game.games"
+    v-bind:key="g.title"
+    v-bind:images="g.images"
+    v-bind:title="g.title"
+    v-bind:copy="g.copy"
+    v-bind:logo="g.logo")
 
-  //- 
-    category-intro(title="Game")
-      p Been making websites for at least 10 years, primarily on the frontend. Currently fascinated with Vue.js and Laravel, but plenty of XP with Shopify, Wordpress, and dabbles with React, Phonegap, and Three.js.
+  //----------------------------------------
+    ART
+  //----------------------------------------
+  category-intro(:title="art.headline"
+    anchor="installation-art")
+    .content(v-html="art.intro")
 
-    category-intro(title="Art")
-      p Been making websites for at least 10 years, primarily on the frontend. Currently fascinated with Vue.js and Laravel, but plenty of XP with Shopify, Wordpress, and dabbles with React, Phonegap, and Three.js.
+  portfolio-item(v-for="a in art.pieces"
+    v-bind:key="a.title"
+    v-bind:images="a.images"
+    v-bind:title="a.title"
+    v-bind:copy="a.copy"
+    v-bind:logo="a.logo")
 
 </template>
 
@@ -31,6 +55,10 @@ import Intro from '@/components/Intro'
 import PortfolioItem from '@/components/PortfolioItem'
 import LogoGarden from '@/components/LogoGarden'
 import CategoryIntro from '@/components/CategoryIntro'
+
+import WebContent from '@/content/web'
+import GameContent from '@/content/game'
+import ArtContent from '@/content/art'
 
 export default {
   name: 'hello',
@@ -43,20 +71,20 @@ export default {
     'portfolio-item': PortfolioItem,
   },
 
-  data() { return {
-    stikwood: require('@/assets/web/stikwood.png'),
+  data() {
+    return {
+      web: WebContent,
+      game: GameContent,
+      art: ArtContent,
+    }
+  },
 
-    clients: [
-      require('@/assets/clients/coachella.png'),
-      require('@/assets/clients/nasdaq.png'),
-      require('@/assets/clients/pandora.png'),
-      require('@/assets/clients/clifbar.png'),
-      require('@/assets/clients/crocker-art-museum.png'),
-      require('@/assets/clients/gallo.png'),
-      require('@/assets/clients/clever.png'),
-      require('@/assets/clients/copa-america.png'),
-      require('@/assets/clients/stikwood.png'),
-    ]}
+  computed: {
+
+    clientLogos() {
+      return this.web.clients.map(client => client.logo);
+    },
+
   }
 }
 </script>

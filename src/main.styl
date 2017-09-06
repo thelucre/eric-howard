@@ -37,3 +37,38 @@ body
 p
   font-size 30px
   line-height 1.5
+
+a.hoverable
+  color white
+  display inline-block
+  text-decoration none
+  position relative
+  transition all 0.2s ease
+  cursor pointer
+  gpu-cache()
+
+  &:after
+    content ' '
+    position absolute
+    display block
+    bottom 0.5rem
+    left 0
+    right 0
+    border-top 2px solid white
+    transition all 0.2s ease
+    pointer-events none
+
+  &:hover,
+  &:active
+    transform rotate(-3deg) scale(1.05)
+
+    &:after
+      opacity 0
+
+  &.hoverable-light
+    font-weight 600
+
+
+    &:after
+      border-width 1px
+      bottom 0.35rem

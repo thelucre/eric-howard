@@ -1,6 +1,6 @@
 <template lang="jade">
 .block.category-intro
-
+  a.anchor(:name="anchor" v-bind:id="anchor")
   h2.heading {{ title }}
 
   .content
@@ -12,29 +12,38 @@
 export default {
   name: 'category-intro',
 
-  props: ['title', 'content']
+  props: ['anchor', 'title', 'content']
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .category-intro
-  //
-h2
-  font-size 100px
-  position relative
-  display inline-block
+  a.anchor
+    display block
+    position relative
+    top rem(-60px)
+    visibility hidden
 
-  &:after
-    content ' '
-    background purple
-    height 3px
-    position absolute
-    bottom 0
-    left -2000px
-    right 0
+  h2
+    font-size 100px
+    position relative
+    display inline-block
 
-p
-  font-style italic
-  max-width 80%
+    &:after
+      content ' '
+      background purple
+      height 3px
+      position absolute
+      bottom 0
+      left -2000px
+      right rem(4px)
+
+  p
+    font-style italic
+    max-width 80%
+    margin-bottom 6rem
+
+  a.hoverable-light
+    font-weight normal
 
 </style>

@@ -1,7 +1,10 @@
 <template lang="jade">
 .logo-garden
-  img.logo(v-for='logo in logos'
-    v-bind:src='logo')
+  visual(v-for='logo in logos'
+    v-bind:key='logo'
+    v-bind:image='logo'
+    load='visible'
+    offset='200')
 
 </template>
 
@@ -14,14 +17,18 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
+
 .logo-garden
   padding-left 0
   padding-right @padding-left
 
-  .logo
+  img
     max-width rem(200px)
     max-height rem(40px)
+
+  .vv-visual
+    display inline-block
     vertical-align middle
 
     margin-right rem(80px)
