@@ -9,6 +9,10 @@
     a.hoverable(href="#installation-art") installation artwork
     | .
 
+  link-banner(link='#contact')
+    span Open for freelance opportunities.&nbsp;
+    strong LMK.
+
 </template>
 
 <script>
@@ -17,17 +21,16 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .intro
   padding 0 0 16rem 0
   text-align center
 
-h2
-  color white
-  font-size 3.5rem
-  font-style italic
-  max-width 850px
-  margin 0 auto
-  font-weight normal
-
+  h2
+    color white
+    font-size 3.5rem
+    font-style italic
+    max-width 850px
+    margin 0 auto
+    font-weight normal
 </style>

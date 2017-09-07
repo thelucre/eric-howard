@@ -11,7 +11,7 @@ export default {
       project: {
         title: 'Coachella',
 
-        copy: 'Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
+        copy: '<p><strong>Lead Web Developer</strong></p>The 2017 festival site needed a big change from the previous year\'s. The reimagined knowledge base became a series of guides with super flexible custom content blocks. Coupled with an über pretty styleguide, this Wordpress and Vue project gave the Coachella folks plenty of control to support all phases of the festival.<p>',
 
         link: {
           url: 'http://coachella.com/home',
@@ -39,7 +39,7 @@ export default {
       project: {
         title: 'Clever',
 
-        copy: 'Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
+        copy: '<p><strong>Lead Frontend Developer</strong></p><p>Clever integrates school data systems with developer apps. They needed a balance of beauty, credibility, and accessiblity in their user experience. This was a static Webpack asset and Twig build made to deliver for Clever\'s backend team to wire into Craft CMS.</p>',
 
         link: {
           url: 'http://clever.com',
@@ -59,7 +59,7 @@ export default {
       project: {
         title: 'Stikwood',
 
-        copy: 'Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.',
+        copy: '<p><strong>Full Stack Developer</strong></p><p>Our team stretched the potential of Shopify by building a custom Laravel CMS that renders entire views to Shopify metafields. The Stikwood folks can now manage tons of content to enhance every page of their store.</p>',
 
         link: {
           url: 'http://stikwood.com',

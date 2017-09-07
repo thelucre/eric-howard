@@ -31,4 +31,10 @@ export default {
       opacity 1
       transform scale(1.25) rotate(-6deg)
       text-shadow 0 0 1rem rgba(black, 0.1)
+
+    &:first-of-type
+      margin-left 0
+      
+    &:last-of-type
+      margin-right 0
 </style>

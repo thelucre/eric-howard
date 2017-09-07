@@ -10,14 +10,10 @@
 </template>
 
 <script>
-import SocialLinks from './SocialLinks'
+
 
 export default {
   name: 'home-marquee',
-
-  components: {
-    'social-links': SocialLinks,
-  },
 }
 </script>
 

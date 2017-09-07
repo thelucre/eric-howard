@@ -9,7 +9,13 @@ import router from './router'
 Vue.config.productionTip = false
 
 import VueVisual from 'vue-visual'
+import LinkBanner from '@/components/LinkBanner'
+import SocialLinks from '@/components/SocialLinks'
+
 Vue.component('visual', VueVisual);
+Vue.component('link-banner', LinkBanner);
+Vue.component('social-links', SocialLinks);
+
 
 /* eslint-disable no-new */
 new Vue({
@@ -28,7 +34,7 @@ console.log('%c '+
 ' █   █ █▄   ▄▀ ███▄  ███▄  ▀████  █   \n' +
 '    █  ▀███▀       ▀     ▀            \n' +
 '   ▀                              ▀   ',
-  'background: #222; color: #bada55; font-size: 11px; line-height: 0.5;');
+  'background: #222; color: #bada55; font-size: 11px;');
 
 console.log( '%c\n\nAnd welcome to the console',
-  'background: #222; color: #bada55; font-size: 20px; text-transform: uppercase;');
+  'background: #222; color: #bada55; font-size: 15px; text-transform: uppercase;');
