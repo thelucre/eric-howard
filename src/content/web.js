@@ -2,7 +2,7 @@ export default {
 
   headline: 'Web',
 
-  intro: "<p>Been making websites for at least 10 years, primarily on the frontend. Currently fascinated with Vue.js and Laravel, but plenty of XP with Shopify, Wordpress, and dabbling with React, D3, and Three.js.</p><p>Clients I've built sites for:</p>",
+  intro: "<p>I've always been interested in rich interaction, so naturally I was drawn to the frontend. I spend most of my day building Vue.js components, scaffolding information architectures with Laravel, and experimenting with web motion. I'm often working on Wordpress, Shopify, or custom CMS projects.</p><p>A select list of clients I've built sites for:</p>",
 
   clients: [
     {
@@ -19,7 +19,6 @@ export default {
         },
 
         images: [
-          require('@/assets/web/coachella-desktop-mobile-website.png'),
           require('@/assets/web/coachella-desktop-mobile-website.png'),
         ],
       },
@@ -47,7 +46,9 @@ export default {
           text: 'clever.com',
         },
 
-        images: [],
+        images: [
+          require('@/assets/web/clever-frontend-developer-eric-howard-custom.png'),
+        ],
       },
 
     },{
@@ -66,7 +67,7 @@ export default {
         },
 
         images: [
-          require('@/assets/web/stikwood.png')
+          require('@/assets/web/stikwood-shopify-development-eric-howard-frontend-developer.png')
         ],
       },
     }

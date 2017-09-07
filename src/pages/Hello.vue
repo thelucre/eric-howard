@@ -31,6 +31,7 @@
     v-bind:images="g.images"
     v-bind:title="g.title"
     v-bind:copy="g.copy"
+    v-bind:link="g.link"
     v-bind:logo="g.logo")
 
   //----------------------------------------
@@ -45,6 +46,7 @@
     v-bind:images="a.images"
     v-bind:title="a.title"
     v-bind:copy="a.copy"
+    v-bind:link="a.link"
     v-bind:logo="a.logo")
 
 </template>

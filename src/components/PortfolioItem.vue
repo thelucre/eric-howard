@@ -12,7 +12,7 @@
       a.hoverable.hoverable-light(:href="link.url" target="_blank") {{ link.text }}
 
   .column
-    visual(v-if='images'
+    visual.portfolio(v-if='images'
       v-for='image in images'
       v-bind:image='image'
       v-bind:key='image'
@@ -64,4 +64,11 @@ export default {
   .vv-image
     width 100%
 
+  .portfolio
+    .vv-image
+      border-radius rem(5px)
+      overflow hidden
+
+    &:not(:last-of-type)
+      margin-bottom rem(20px)
 </style>
