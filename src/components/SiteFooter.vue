@@ -34,7 +34,7 @@ export default {
 
   &:after
     content ' '
-    background rgba(white,0.8)
+    background rgba(white,1)
     position absolute
     transform rotate(5deg)
     width 120%

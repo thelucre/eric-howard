@@ -43,10 +43,10 @@ export default {
 
     @media(max-width tablet)
       font-size 2.2rem
-      max-width rem(500px)
+      max-width rem(550px)
 
-    @media(max-width tablet)
+    @media(max-width mobile)
       font-size 2rem
-      max-width rem(320px)
+      max-width rem(370px)
 
 </style>
