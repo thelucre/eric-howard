@@ -11,9 +11,14 @@
   mq-values(font-size, 100%, 80%, 1200px)
 
 body
-  background-color #FAACA8
-  background-image linear-gradient(19deg, pink 0%, purple 90%)
-  background-attachment fixed
+
+  &:after
+    content ' '
+    z-index -1
+    fill(transparent)
+    background-color #FAACA8
+    background-image linear-gradient(19deg, pink 0%, purple 90%)
+    position fixed
 
   *
     color white
