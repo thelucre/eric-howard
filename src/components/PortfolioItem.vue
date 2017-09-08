@@ -43,9 +43,14 @@ export default {
         width 35%
         margin-right 5%
 
+        @media(max-width tablet-landscape)
+          width 45%
+
       &:last-of-type
         width 60%
 
+        @media(max-width tablet-landscape)
+          width 50%
   h3
     font-size 50px
 
@@ -60,6 +65,10 @@ export default {
     max-width 200px
     max-height 110px
     width auto
+
+    @media(max-width tablet)
+      max-width 150px
+      max-height 80px
 
   .vv-image
     width 100%

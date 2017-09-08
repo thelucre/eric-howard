@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .social-links
   margin-top 4rem
   a
@@ -34,7 +34,7 @@ export default {
 
     &:first-of-type
       margin-left 0
-      
+
     &:last-of-type
       margin-right 0
 </style>

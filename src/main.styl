@@ -22,6 +22,8 @@ body
   -webkit-font-smoothing antialiased
   -moz-osx-font-smoothing grayscale
 
+#main
+  overflow hidden
 
 .heading
   font-family 'Monoton', cursive
@@ -34,9 +36,20 @@ body
   margin-right @margin-left
   padding 8rem 20px
 
+  @media(max-width tablet)
+    padding-top 4rem
+    padding-bottom @padding-top
+
 p
   font-size 30px
   line-height 1.5
+
+  @media(max-width desktop-small)
+    font-size 27px
+
+  @media(max-width tablet)
+    font-size 24px
+    line-height 1.2
 
 a.hoverable
   color white
@@ -44,19 +57,25 @@ a.hoverable
   text-decoration none
   position relative
   transition all 0.2s ease
-  cursor pointer
+  cursor pointer !important
   gpu-cache()
 
   &:after
     content ' '
     position absolute
     display block
-    bottom 0.5rem
+    bottom 5px
     left 0
     right 0
     border-top 2px solid white
     transition all 0.2s ease
     pointer-events none
+
+  &:not(.hoverable-light)
+    @media(max-width tablet)
+      &:after
+        border-top-width 1px
+        bottom 2px
 
   &:hover,
   &:active
@@ -64,6 +83,9 @@ a.hoverable
 
     &:after
       opacity 0
+
+  &:active
+    transform rotate(-3deg) scale(1)
 
   &.hoverable-light
     font-weight 600

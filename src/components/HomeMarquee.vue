@@ -38,6 +38,11 @@ h1
   margin 0
   color white
 
+  @media(max-width desktop-small)
+    font-size 9rem
+  @media(max-width mobile)
+    font-size 7rem
+
 .space
   /*letter-spacing 0.55vw*/
 
@@ -55,7 +60,11 @@ h2
   text-transform uppercase
   font-family 'Arial', sans-serif
   letter-spacing 0.3vw
-  font-size 1rem
+  font-size 18px
   border-radius 2px
   box-shadow 0 0 20px rgba(black, 0.05)
+
+  @media(max-width mobile)
+    font-size 15px
+    padding 0.7rem 0.8rem
 </style>

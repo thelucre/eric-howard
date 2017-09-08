@@ -11,10 +11,14 @@ Vue.config.productionTip = false
 import VueVisual from 'vue-visual'
 import LinkBanner from '@/components/LinkBanner'
 import SocialLinks from '@/components/SocialLinks'
+import SiteFooter from '@/components/SiteFooter'
+import CategoryIntro from '@/components/CategoryIntro'
 
 Vue.component('visual', VueVisual);
 Vue.component('link-banner', LinkBanner);
 Vue.component('social-links', SocialLinks);
+Vue.component('site-footer', SiteFooter);
+Vue.component('category-intro', CategoryIntro);
 
 
 /* eslint-disable no-new */

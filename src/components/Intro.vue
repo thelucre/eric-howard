@@ -23,14 +23,30 @@ export default {
 
 <style lang="stylus">
 .intro
-  padding 0 0 16rem 0
+  padding 8rem 0
   text-align center
+
+  @media(max-width tablet)
+    padding 3rem 0 8rem
 
   h2
     color white
     font-size 3.5rem
     font-style italic
-    max-width 850px
+    max-width rem(850px)
     margin 0 auto
     font-weight normal
+
+    @media(max-width desktop-small)
+      max-width rem(700px)
+      font-size 2.8rem
+
+    @media(max-width tablet)
+      font-size 2.2rem
+      max-width rem(500px)
+
+    @media(max-width tablet)
+      font-size 2rem
+      max-width rem(320px)
+
 </style>

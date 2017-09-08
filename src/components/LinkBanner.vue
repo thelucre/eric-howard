@@ -29,6 +29,7 @@ export default {
   cursor pointer
   gpu-cache()
 
+
   &:hover
     transform translateY(-5px) scale(1.03) rotate(-1deg)
     box-shadow 0 30px 40px rgba(black, 0.05)
@@ -38,6 +39,12 @@ export default {
     letter-spacing rem(1px)
     text-transform uppercase
     font-size 14px
+
+    @media(max-width tablet)
+      font-size 12px
+
+    @media(max-width mobile)
+      letter-spacing 0
 
   a
     font-weight bold

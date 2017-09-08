@@ -49,18 +49,6 @@
     v-bind:link="a.link"
     v-bind:logo="a.logo")
 
-  //----------------------------------------
-    CONTACT
-  //----------------------------------------
-  category-intro(title="CONTACT"
-    anchor="contact")
-    .content
-      p I'm open for freelance projects and always down for talking shop! If you are looking for a mentor or to be a mentee, I am available. I do my best to surround myself with big thinkers who want to teach and learn.
-
-    social-links
-
-  //- .copyright
-    &copy; {{ (new Date).getFullYear() }} Eric Howard
 </template>
 
 <script>
@@ -68,7 +56,6 @@ import HomeMarquee from '@/components/HomeMarquee'
 import Intro from '@/components/Intro'
 import PortfolioItem from '@/components/PortfolioItem'
 import LogoGarden from '@/components/LogoGarden'
-import CategoryIntro from '@/components/CategoryIntro'
 
 import WebContent from '@/content/web'
 import GameContent from '@/content/game'
@@ -79,7 +66,6 @@ export default {
 
   components: {
     'home-marquee': HomeMarquee,
-    'category-intro': CategoryIntro,
     'intro': Intro,
     'logo-garden': LogoGarden,
     'portfolio-item': PortfolioItem,
