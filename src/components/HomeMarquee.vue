@@ -20,7 +20,7 @@ export default {
 <style lang="stylus" scoped>
 .home-marquee
   height 100vh
-
+  position relative
 
 .content
   position absolute
@@ -29,6 +29,7 @@ export default {
   transform translate(-50%, -50%)
   text-align center
   width 95%
+  z-index 2
 
 h1
   font-size 11.4rem
