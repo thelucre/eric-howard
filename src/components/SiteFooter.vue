@@ -28,11 +28,13 @@ export default {
   .category-intro
     padding-top 0
     padding-bottom rem(70px)
+    z-index 1
+    position relative
 
     .heading:after
       background-color rgba(pink, 0.5)
 
-  &:after
+  &:before
     content ' '
     background rgba(white,1)
     position absolute
@@ -41,7 +43,7 @@ export default {
     height 120%
     top -10%
     left -10%
-    z-index -2
+    z-index 0
     box-shadow 0 0 50px rgba(black, 0.05)
 
   p
