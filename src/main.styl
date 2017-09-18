@@ -1,7 +1,7 @@
 @import '~normalize.css/normalize.css'
 @import '~bukwild-stylus-library'
-@import './stylus/mixins.styl'
 
+@import './stylus/mixins.styl'
 @import './stylus/typography.styl'
 
 
@@ -11,6 +11,8 @@
   mq-values(font-size, 100%, 80%, 1200px)
 
 body
+  overflow-x hidden
+  width 100%
 
   &:after
     content ' '
@@ -28,7 +30,6 @@ body
   -moz-osx-font-smoothing grayscale
 
 #main
-  overflow hidden
   position relative
   z-index 1
 
@@ -67,6 +68,10 @@ a.hoverable
   cursor pointer !important
   gpu-cache()
 
+  for num in (1..10)
+    &:nth-of-type({num}):after
+      transition transform .3s (.4s * num) cubic-bezier(.74,0,.19,1), opacity .3s ease
+
   &:after
     content ' '
     position absolute
@@ -77,6 +82,8 @@ a.hoverable
     border-top 2px solid white
     transition all 0.2s ease
     pointer-events none
+    transform scaleX(0)
+    transform-origin center left
 
   &:not(.hoverable-light)
     @media(max-width tablet)
@@ -97,7 +104,9 @@ a.hoverable
   &.hoverable-light
     font-weight 600
 
-
     &:after
       border-width 1px
       bottom 0.35rem
+
+.in-viewport a.hoverable:after
+  transform scaleX(1)

@@ -8,13 +8,19 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import inViewportDirective from 'vue-in-viewport-directive'
+Vue.directive('in-viewport', inViewportDirective)
+
 import VueVisual from 'vue-visual'
 import LinkBanner from '@/components/LinkBanner'
 import SocialLinks from '@/components/SocialLinks'
 import SiteFooter from '@/components/SiteFooter'
 import CategoryIntro from '@/components/CategoryIntro'
 
-Vue.component('visual', VueVisual);
+Vue.component('visual', VueVisual).options.setDefaults({
+	offset: 1000,
+	transition: 'vv-fade'
+})
 Vue.component('link-banner', LinkBanner);
 Vue.component('social-links', SocialLinks);
 Vue.component('site-footer', SiteFooter);

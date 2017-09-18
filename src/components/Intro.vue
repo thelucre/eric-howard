@@ -1,6 +1,6 @@
 <template lang="jade">
 .block.intro
-  h2
+  h2(v-in-viewport.once="-200")
     | I build&nbsp;
     a.hoverable(href="#web-development") websites
     | , craft&nbsp;
@@ -37,6 +37,10 @@ export default {
     margin 0 auto
     font-weight normal
 
+    opacity 0
+    transform translateY(20px)
+    transition opacity .8s .2s ease, transform .8s .2s ease
+
     @media(max-width desktop-small)
       max-width rem(700px)
       font-size 2.8rem
@@ -49,4 +53,7 @@ export default {
       font-size 2rem
       max-width rem(370px)
 
+    &.in-viewport
+      opacity 1
+      transform translateY(0)
 </style>

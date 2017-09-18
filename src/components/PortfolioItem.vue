@@ -1,14 +1,16 @@
 <template lang="jade">
+
 .block.portfolio-item
 
   .column
-    h3(v-if="!logo") {{ title }}
-    visual.logo(v-if="logo"
-      v-bind:image="logo")
+    .heading.fade-up(v-in-viewport.once="-200")
+      h3(v-if="!logo") {{ title }}
+      visual.logo(v-if="logo"
+        v-bind:image="logo")
 
-    p.content(v-html='copy')
+    p.content.fade-up(v-in-viewport.once="-200" v-html='copy')
 
-    p.link(v-if="link")
+    p.link.fade-up(v-in-viewport.once="-200" v-if="link")
       a.hoverable.hoverable-light(:href="link.url" target="_blank") {{ link.text }}
 
   .column
@@ -16,8 +18,7 @@
       v-for='image in images'
       v-bind:image='image'
       v-bind:key='image'
-      load='visible'
-      offset='200')
+      load='visible')
 
 </template>
 

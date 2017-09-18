@@ -1,0 +1,20 @@
+.fade-enter-active,
+.fade-leave-active
+  transition opacity 3.5s
+
+.fade-enter,
+.fade-leave-to
+  opacity 0
+
+.fade-up
+  easing = 1s
+  transition opacity easing ease, transform easing ease
+  gpu-cache()
+
+  &:not(.in-viewport)
+    opacity 0
+    transform translateY(15px)
+
+  &.in-viewport
+    opacity 1
+    transform translateY(0)
