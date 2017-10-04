@@ -3,6 +3,7 @@ var utils = require('./utils')
 var config = require('../config')
 var webpack = require('webpack')
 var vueLoaderConfig = require('./vue-loader.conf')
+var PrerenderSpaPlugin = require('prerender-spa-plugin')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -64,12 +65,20 @@ module.exports = {
       }
     ]
   },
-  plugins: [new webpack.LoaderOptionsPlugin({
-    options: {
-      // Source the definitions file globally
-      stylus: {
-        import: [path.resolve(__dirname, '../src/stylus/definitions.styl')]
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        // Source the definitions file globally
+        stylus: {
+          import: [path.resolve(__dirname, '../src/stylus/definitions.styl')]
+        }
       }
-    }
-  })],
+    }),
+    new PrerenderSpaPlugin(
+      // Absolute path to compiled SPA
+      path.join(resolve('dist')),
+      // Routes to prerender
+      [ '/',]
+    )
+  ],
 }
