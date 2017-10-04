@@ -2,23 +2,23 @@
 
 .block.portfolio-item
 
-  .column
-    .heading.fade-up(v-in-viewport.once="-200")
+  .column.fade-up(v-in-viewport.once="-200")
+    .heading
       h3(v-if="!logo") {{ title }}
       visual.logo(v-if="logo"
         v-bind:image="logo")
 
-    p.content.fade-up(v-in-viewport.once="-200" v-html='copy')
+    p.content(v-html='copy')
 
-    p.link.fade-up(v-in-viewport.once="-200" v-if="link")
+    p.link(v-if="link")
       a.hoverable.hoverable-light(:href="link.url" target="_blank") {{ link.text }}
 
   .column
-    visual.portfolio(v-if='images'
+    visual.portfolio.fade-up.fade-up-late(v-if='images'
+      v-in-viewport.once="-200"
       v-for='image in images'
       v-bind:image='image'
-      v-bind:key='image'
-      load='visible')
+      v-bind:key='image')
 
 </template>
 
@@ -75,6 +75,7 @@ export default {
     width 100%
 
   .portfolio
+
     .vv-image
       border-radius rem(5px)
       overflow hidden

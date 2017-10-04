@@ -35,6 +35,12 @@ new Vue({
   components: { App }
 })
 
+document
+	.getElementsByTagName('body')[0]
+	.addEventListener('click', function(e) {
+	console.log(e.target);
+});
+
 
 // A lil bit of customization
 console.log('%c '+

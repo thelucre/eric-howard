@@ -61,6 +61,11 @@ export default {
     font-size 12px
     font-family 'Arial', sans-serif
 
-  .social-links a
-    color rgba(pink, 0.8)
+  .social-links
+    span
+      for num in (1..5)
+        &:nth-of-type({num})
+          transition-delay (.4s + .1s * num)
+    a
+      color rgba(pink, 0.8)
 </style>
