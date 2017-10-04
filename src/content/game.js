@@ -39,7 +39,12 @@ export default {
       title: 'GeoTap',
       logo: require('@/assets/game/geotap-ios-android-logo-lucre-games.png'),
 
-      copy: '<strong>Coming soon to Android and iOS</strong><br/><br/>A calming meditative experience, GeoTap was designed to build focus and patience. Especially nice after those long, complicated days.',
+      copy: 'A calming meditative experience, GeoTap was designed to build focus and patience. Especially nice after those long, complicated days.',
+
+      link: {
+        url: 'https://itunes.apple.com/us/app/geotap-game/id1268346417',
+        text: 'Play GeoTap on iOS'
+      },
 
       images: [
         require('@/assets/game/geotap-lucre-games-low-poly-3d-unity-ios.jpg'),
